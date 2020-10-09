@@ -10,4 +10,5 @@ docker push registry.cn-hangzhou.aliyuncs.com/walkerlms/eureka:0.0.1
 
 docker service create --replica 1 --name eureka -p 8080:8080 registry.cn-hangzhou.aliyuncs.com/walkerlms/eureka:0.0.1
 #docker service update --image registry.cn-hangzhou.aliyuncs.com/walkerlms/eureka:0.0.1 eureka
+
 exit 0
