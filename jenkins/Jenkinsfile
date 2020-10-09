@@ -33,7 +33,7 @@ pipeline {
        	        sh 'mvn docker:push'
        	   }
        	}
-        		/*
+        /*
         stage('Deploy') {
             steps {
                 withEnv(['JENKINS_NODE_COOKIE=dontkillme']){
