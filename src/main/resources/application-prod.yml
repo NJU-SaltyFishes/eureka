@@ -1,0 +1,13 @@
+server:
+  port: 8080
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 39.106.227.22
+    hostname: iZ2ze11vyivzjlc2stc5s4Z
+    instance-id: ${eureka.instance.ip-address}:${server.port}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.ip-address}:${server.port}/
