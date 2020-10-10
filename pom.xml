@@ -22,7 +22,7 @@
 		<docker.image.name>eureka</docker.image.name>
 		<docker.image.tag>0.0.1</docker.image.tag>
 		<docker.repository>registry.cn-hangzhou.aliyuncs.com</docker.repository>
-		<docker.registry.name>walkerlms</docker.registry.name>
+		<docker.registry.name>nju_oasis</docker.registry.name>
 	</properties>
 
 	<dependencies>

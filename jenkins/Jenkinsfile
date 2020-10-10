@@ -33,14 +33,12 @@ pipeline {
        	        sh 'mvn docker:push'
        	   }
        	}
-        /*
         stage('Deploy') {
             steps {
                 withEnv(['JENKINS_NODE_COOKIE=dontkillme']){
-					sh './jenkins/startup.sh'
+					sh 'docker service create --replica 1 --name eureka -p 8080:8080 registry.cn-hangzhou.aliyuncs.com/nju_oasis/eureka:0.0.1'
 				}
             }
         }
-        */
     }
 }
