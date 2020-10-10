@@ -34,8 +34,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 withEnv(['JENKINS_NODE_COOKIE=dontkillme']){
-					sh 'docker service update --image registry.cn-hangzhou.aliyuncs.com/nju_oasis/eureka:0.0.1 eureka'
-				}
+			sh 'docker service update --image registry.cn-hangzhou.aliyuncs.com/nju_oasis/eureka:0.0.1 eureka'
+		}
             }
         }
     }
