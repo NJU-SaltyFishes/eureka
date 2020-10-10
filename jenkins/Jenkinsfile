@@ -23,6 +23,7 @@ pipeline {
 			}
 		}
 		*/
+		/*
 		stage('Image') {
 		    steps {
 		        sh 'mvn docker:build'
@@ -32,7 +33,7 @@ pipeline {
             steps {
        	        sh 'mvn docker:push'
        	   }
-       	}
+       	}*/
         stage('Deploy') {
             steps {
                 withEnv(['JENKINS_NODE_COOKIE=dontkillme']){
