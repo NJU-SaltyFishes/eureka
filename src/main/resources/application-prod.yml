@@ -3,8 +3,8 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
-    ip-address: 39.106.227.22
-    hostname: iZ2ze11vyivzjlc2stc5s4Z
+    ip-address: 47.103.195.52
+    hostname: worker1
     instance-id: ${eureka.instance.ip-address}:${server.port}
   client:
     register-with-eureka: false
